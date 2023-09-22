@@ -12,7 +12,6 @@ const n2 = Number(prompt("digite um segundo valor"))
 const resultado=calcularMedia(n1,n2);
 console.log(resultado);
 ----------------------------------------------------------------------------------
-
 //leia o codigo abaixo
 
 function minhaFuncao(variavel) {
@@ -29,3 +28,24 @@ minhaFuncao(10)
 //b .O que aconteceria se retirasse os dois console.log e simplesmente invocasse a função minhaFuncao(2) e minhaFuncao(10)
 //Live reload enabled.
 
+---------------------------------------------------------------------------------------
+
+/2. leia o codigo abaixo
+
+let textoDoUsuario = prompt("insira um texto");
+
+const outraFuncao = function(texto) {
+	return texto.toLowerCase().includes("cenoura")
+}
+
+const resposta = outraFuncao(textoDoUsuario)
+console.log(resposta)
+
+//a. Explique o que essa função faz e qual é sua utilidade
+//se tem cenoura no texto ele da como true se n tiver ele da como false por causa do includes
+
+//b. Determine qual será a saída no console para cada uma das 3 entradas do usuário:
+     //i.   `Eu gosto de cenoura`
+     //ii.  `CENOURA é bom pra vista`
+     //iii. `Cenouras crescem na terra`
+     // true, true, true
